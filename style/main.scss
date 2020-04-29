@@ -1,0 +1,27 @@
+@import 'inc/reset';
+@import 'inc/modal';
+@import 'inc/main-body';
+
+*{
+    box-sizing: border-box;
+}
+html{
+    display:flex;
+    min-height: 100%;
+}
+body{
+    display:flex;
+    width:100%;
+    font-family: Hind, serif;
+}
+#civrandomizer{
+    display: block;
+}
+.site-title{
+    font-size: 4em;
+    font-weight: bold;
+    font-family: Cabin, sans-serif;
+}
+.site-sub-title{
+    font-size: 1.5em;
+}

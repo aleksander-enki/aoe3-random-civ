@@ -1,0 +1,112 @@
+#toggle-options {
+    position: absolute;
+    top: 1em;
+    right: 0.5em;
+    z-index: 1000;
+}
+
+#content {
+    flex-direction: column;
+    margin: 10em auto auto;
+
+    >* {
+        margin: 1rem;
+        margin-left: 5rem;
+    }
+
+}
+
+#civilization-results {
+    .result {
+        padding: 0.5em;
+        width: 500px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        .civ-flag {
+            display: block;
+            height: 1em;
+            width: 1.25em;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .civ-flag-0 {
+            background-image: url(../images/spanish.png);
+        }
+
+        .civ-flag-1 {
+            background-image: url(../images/british.png);
+        }
+
+        .civ-flag-2 {
+            background-image: url(../images/french.png);
+        }
+
+        .civ-flag-3 {
+            background-image: url(../images/dutch.png);
+        }
+
+        .civ-flag-4 {
+            background-image: url(../images/portuguese.png);
+        }
+
+        .civ-flag-5 {
+            background-image: url(../images/russians.png);
+        }
+
+        .civ-flag-6 {
+            background-image: url(../images/germans.png);
+        }
+
+        .civ-flag-7 {
+            background-image: url(../images/ottomans.png);
+        }
+
+        .civ-flag-8 {
+            background-image: url(../images/sioux.png);
+        }
+
+        .civ-flag-9 {
+            background-image: url(../images/iroquois.png);
+        }
+
+        .civ-flag-10 {
+            background-image: url(../images/aztec.png);
+        }
+
+        .civ-flag-11 {
+            background-image: url(../images/china.png);
+        }
+
+        .civ-flag-12 {
+            background-image: url(../images/india.png);
+        }
+
+        .civ-flag-13 {
+            background-image: url(../images/japan.png);
+        }
+    }
+}
+
+.titles {
+    margin: 0.5rem;
+}
+
+.button {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    display: flex;
+    padding: 1rem;
+    margin: auto;
+    margin-left: 5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button-chooser {
+    font-size: 1.25em;
+    width: max-content;
+    padding: 1.5rem;
+}

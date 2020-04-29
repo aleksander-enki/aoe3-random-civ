@@ -1,0 +1,43 @@
+body{
+    font-size: 20px;
+}
+.modal{
+    position: absolute;
+    display:flex;
+    transform:scaleX(0);
+    transform-origin: right;
+    transition: all 500ms ease;
+    top:0;
+    bottom:0;
+    right:0;
+    &.modal-open{
+        transform:scaleX(1);
+    }
+}
+#options-modal{
+    background: rgba(0,0,0,0.75);
+}
+.modal-options{
+    background: #fff;
+    display:flex;
+    flex-direction: column;
+    font-size: 1.25em;
+    justify-content: center;
+    width: 600px;
+    height: 100%;
+    margin:auto;
+    padding: 3rem;
+    .modal-option{
+        display:grid;
+        grid-template-columns: 1fr 0.1fr;
+        padding: 0.5em;
+        height: 100;
+        align-items: center;
+        input[type=number]{
+            height: 3rem;
+            font-size: 0.9rem;
+            font-weight: bold;
+            padding:0.5rem;
+        }
+    }
+}

@@ -1,4 +1,66 @@
-<html>
-  <h1>Hello</h1>
-  <script>console.log("HEY")</script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age of Empires III - Civilization Randomizer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,700|Hind:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body id="content">
+    <section class="titles">
+        <h1 class="site-title">AOE3 Civilization Randomizer</h1>
+        <h2 class="site-sub-title">✌ Created by Aleksander aka Enki_</h2>
+    </section>
+    <button id="toggle-options" class="hamburger hamburger--collapse">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+    <header id="options-modal" class="modal">
+        <div class="modal-options">
+            <section id="options-modal-players" class="modal-option">
+                <label for="players-in-game">How many players are in the game?</label>
+                <input type="number" name="players-in-game" value="8" min="1" max="8" />
+            </section>
+            <section id="options-modal-unique-civs" class="modal-option">
+                <label for="civilization-repeat">How many times can a civilization be repeated? [Zero means unlimited
+                    repeats]</label>
+                <input type="number" name="civilization-repeat" value="0" min="0" max="8" />
+            </section>
+        </div>
+    </header>
+    <button id="civilization-randomizer" class="button button-chooser">🎲 Randomize Civilizations</button>
+    <section id="civilization-results">
+        <!-- RESULTS GET PUT IN HERE -->
+    </section>
+
+    <script id="settings" type="text/json">
+        {
+            "civs": [
+                "Spanish",
+                "British",
+                "French",
+                "Dutch",
+                "Portuguese",
+                "Russian",
+                "German",
+                "Ottoman",
+                "Sioux",
+                "Iroquois",
+                "Aztec",
+                "China",
+                "India",
+                "Japan"
+            ],
+            "maxPlayers": 8,
+            "uniqueCivs": 0
+        }
+    </script>
+    <script src="script/main.js"></script>
+</body>
+
 </html>
